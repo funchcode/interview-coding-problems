@@ -9,48 +9,40 @@ public class StringCalculator {
 
     // 문자열의 총 합을 반환
     public int getSumOfString(String input) {
-
-        int total = getSum(hasCustomToken(input));
-
-
-        return 0;
+        return getSum(hasCustomToken(input));
     }
 
     // 커스텀 구분자 존재여부
     public String hasCustomToken(String input) {
         // 커스텀 문자 빼내는 정규표현식
         String regex = "//(.)\n(.*)";
-
         if(input.matches(regex)) {
             Matcher regexMatcher = Pattern.compile(regex).matcher(input);
             if(regexMatcher.find()) {
-                System.out.println(regexMatcher.group(1));
-                return input.replaceAll(regexMatcher.group(1), ",");
+                return regexMatcher.group(2).replaceAll(regexMatcher.group(1), ",");
             }
         }
-
         return input;
     }
 
     // 구분자 분리 후 계산
     public int getSum(String input) throws RuntimeException {
-
         String[] number = input.replaceAll(":", ",").split(",");
         int total = 0;
         for(String target : number) {
             if(isNegativeNum(target.trim())) {
                 throw new RuntimeException("음수가 존재합니다.");
             }
-            total += Integer.parseInt(target);
+            total = total + Integer.parseInt(target);
         }
 
-        return 0;
+        return total;
     }
 
     // 음수 존재여부
     public boolean isNegativeNum(String input) {
         String regex = "-.*";
-        return input.matches(regex) ? true : false;
+        return input.matches(regex);
     }
 
 }
