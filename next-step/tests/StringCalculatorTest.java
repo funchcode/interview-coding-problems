@@ -55,4 +55,36 @@ public class StringCalculatorTest {
         System.out.println(calculator.getSum(calculator.hasCustomToken(input)));
     }
 
+
+    //책 코드////////////////////////////////////////////////
+    @Test
+    public void add_숫자하나() throws Exception {
+        assertEquals(1, calculator.add("1"));
+    }
+
+    @Test
+    public void add_쉼표구분자() throws Exception {
+        assertEquals(3, calculator.add("1,2"));
+    }
+
+    @Test
+    public void split() {
+        assertArrayEquals(new String[] {"1"}, "1".split(","));
+        assertArrayEquals(new String[] {"1", "2"}, "1,2".split(","));
+    }
+
+    @Test
+    public void add_쉼표_또는_구분자() throws Exception{
+        assertEquals(6, calculator.add("1,2:3"));
+    }
+
+    @Test
+    public void add_custom_구분자() throws Exception {
+        assertEquals(6, calculator.add("//;\n1;2;3"));
+    }
+
+    @Test
+    public void add_negative() throws Exception {
+        calculator.add("-1,2,3");
+    }
 }
