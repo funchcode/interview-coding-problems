@@ -7,7 +7,7 @@ public class MyLinkedList {
     public MyLinkedList(Integer data) {
         this.root = new Node(data);
     }
-        
+
 
     // 각 요소
     private class Node {
