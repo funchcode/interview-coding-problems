@@ -54,7 +54,8 @@ public class SetOfStacks18 {
 
     public static void main(String[] args) {
         SetOfStacks18 setOfStacks = new SetOfStacks18(3);
-        String[] str = new String[25];
-        System.out.println(str.length);
+        List<String> str = new ArrayList<>(5);
+        str.add("1");
+        System.out.println(str.size());
     }
 }
