@@ -40,7 +40,7 @@ public class MarathonFinish {
             people = participant[participant.length-1];
         }
 
-        System.out.println(people);
+        //System.out.println(people);
 
         return "";
     }
