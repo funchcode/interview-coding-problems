@@ -1,7 +1,4 @@
-import Level1.FindKth;
-import Level1.MarathonFinish;
-import Level1.MockTest;
-import Level1.PrintRequest;
+import Level1.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,7 +7,6 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        
     }
 }
 
@@ -38,4 +34,11 @@ public class Main {
     for(int i : result) {
         System.out.println(i);
     }
+* */
+
+/*체육시간에 체육복을 지참해서 출석한 학생의 최대값을 구하라
+    Uniform uniform = new Uniform();
+    System.out.println(uniform.solution(5, new int[]{2,4}, new int[]{1,3,5}));
+    System.out.println(uniform.solution(5, new int[]{2,4}, new int[]{3}));
+    System.out.println(uniform.solution(3, new int[]{3}, new int[]{1}));
 * */
