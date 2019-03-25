@@ -7,10 +7,10 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        MiddleExtraction middleExtraction = new MiddleExtraction();
-        System.out.println(middleExtraction.solution("abcde"));
-        System.out.println(middleExtraction.solution("qwer"));
-        //System.out.println("abcde".substring(3, 3));
+        UniChar uniChar = new UniChar();
+        for(int i : uniChar.solution(new int[]{4,4,4,3,3})) {
+            System.out.println(i);
+        }
     }
 }
 
@@ -57,4 +57,11 @@ public class Main {
     MiddleExtraction middleExtraction = new MiddleExtraction();
     System.out.println(middleExtraction.solution("abcde"));
     System.out.println(middleExtraction.solution("qwer"));
+* */
+
+/*연속으로 중복되는 숫자를 제거하라
+    UniChar uniChar = new UniChar();
+    for(int i : uniChar.solution(new int[]{4,4,4,3,3})) {
+        System.out.println(i);
+    }
 * */
