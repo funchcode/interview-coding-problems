@@ -7,6 +7,9 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+        LeapYear leapYear = new LeapYear();
+        System.out.println(leapYear.solution(1, 1));
+        System.out.println(leapYear.solution(5, 24));
     }
 }
 
@@ -41,4 +44,8 @@ public class Main {
     System.out.println(uniform.solution(5, new int[]{2,4}, new int[]{1,3,5}));
     System.out.println(uniform.solution(5, new int[]{2,4}, new int[]{3}));
     System.out.println(uniform.solution(3, new int[]{3}, new int[]{1}));
+* */
+
+/*
+*
 * */
