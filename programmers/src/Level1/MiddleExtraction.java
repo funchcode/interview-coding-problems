@@ -16,4 +16,8 @@ public class MiddleExtraction {
     public String solution(String s) {
         return (s.length()%2==1 ? s.substring(s.length()/2, s.length()/2 + 1) : s.substring(s.length()/2 - 1, s.length()/2 + 1));
     }
+
+    public String version2(String s) {
+        return s.substring((s.length()-1)/2, s.length()/2 + 1);
+    }
 }
