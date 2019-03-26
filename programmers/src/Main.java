@@ -7,9 +7,9 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        UniChar uniChar = new UniChar();
-        for(int i : uniChar.solution(new int[]{4,4,4,3,3})) {
-            System.out.println(i);
+        Divisor divisor = new Divisor();
+        for(int e : divisor.solution(new int[]{3,2,6}, 10)) {
+            System.out.println(e);
         }
     }
 }
@@ -63,5 +63,12 @@ public class Main {
     UniChar uniChar = new UniChar();
     for(int i : uniChar.solution(new int[]{4,4,4,3,3})) {
         System.out.println(i);
+    }
+* */
+
+/*나누어 떨어지는 숫자 배열
+    Divisor divisor = new Divisor();
+    for(int e : divisor.solution(new int[]{3,2,6}, 10)) {
+        System.out.println(e);
     }
 * */
