@@ -13,6 +13,7 @@ package Level1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 // 입출력 예
 // 1 input : strings = ["sun","bed","car"]      n = 1
@@ -43,5 +44,19 @@ public class CustomSort {
             }
         }
         return strings;
+    }
+
+    public String[] version2(String[] strings, int n) {
+        String[] answer = {};
+        ArrayList<String> arr = new ArrayList<>();
+        for (int i = 0; i < strings.length; i++) {
+            arr.add("" + strings[i].charAt(n) + strings[i]);
+        }
+        Collections.sort(arr);
+        answer = new String[arr.size()];
+        for (int i = 0; i < arr.size(); i++) {
+            answer[i] = arr.get(i).substring(1, arr.get(i).length());
+        }
+        return answer;
     }
 }

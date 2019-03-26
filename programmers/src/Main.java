@@ -8,9 +8,9 @@ public class Main {
 
     public static void main(String[] args) {
         CustomSort customSort = new CustomSort();
-        System.out.println(Arrays.toString(customSort.solution(new String[]{"abce","abcd","cdx"}, 2)));
-        System.out.println(Arrays.toString(customSort.solution(new String[]{"sun","bed","car"}, 1)));
-        System.out.println(Arrays.toString(customSort.solution(new String[]{"azb","bze","aza"}, 1)));
+        System.out.println(Arrays.toString(customSort.version2(new String[]{"abce","abcd","cdx"}, 2)));
+        System.out.println(Arrays.toString(customSort.version2(new String[]{"sun","bed","car"}, 1)));
+        System.out.println(Arrays.toString(customSort.version2(new String[]{"azb","bze","aza"}, 1)));
     }
 }
 
