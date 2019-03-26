@@ -1,5 +1,7 @@
 package Level1;
 
+import java.util.Arrays;
+
 // 문제 설명
 // : 배열과 숫자가 주어진다.
 // : 배열안의 원소 중 숫자로 나누어 떨어지는 값을 오름차순으로 리턴하라.
@@ -9,8 +11,6 @@ package Level1;
 // : arr은 자연수를 담은 배열이다.
 // : divisor은 자연수이다.
 // : arr는 길이 1이상인 배열이다.
-
-import java.util.Arrays;
 
 // 입출력 예
 // 1 input : arr = [5,9,7,10]   divisor = 5

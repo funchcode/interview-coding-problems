@@ -7,10 +7,10 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        Divisor divisor = new Divisor();
-        for(int e : divisor.solution(new int[]{3,2,6}, 10)) {
-            System.out.println(e);
-        }
+        CustomSort customSort = new CustomSort();
+        System.out.println(Arrays.toString(customSort.solution(new String[]{"abce","abcd","cdx"}, 2)));
+        System.out.println(Arrays.toString(customSort.solution(new String[]{"sun","bed","car"}, 1)));
+        System.out.println(Arrays.toString(customSort.solution(new String[]{"azb","bze","aza"}, 1)));
     }
 }
 
@@ -71,4 +71,11 @@ public class Main {
     for(int e : divisor.solution(new int[]{3,2,6}, 10)) {
         System.out.println(e);
     }
+* */
+
+/*문자열 내 마음대로 정렬하기
+    CustomSort customSort = new CustomSort();
+    System.out.println(Arrays.toString(customSort.solution(new String[]{"abce","abcd","cdx"}, 2)));
+    System.out.println(Arrays.toString(customSort.solution(new String[]{"sun","bed","car"}, 1)));
+    System.out.println(Arrays.toString(customSort.solution(new String[]{"azb","bze","aza"}, 1)));
 * */
