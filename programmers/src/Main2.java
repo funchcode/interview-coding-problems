@@ -1,6 +1,7 @@
 import Level2.Skilltree;
 import Level2.StockPrice;
 import Level2.Tower;
+import Level2.WonderLand;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,10 +10,8 @@ import java.util.Arrays;
 public class Main2 {
 
     public static void main(String[] args) {
-        Tower tower = new Tower();
-        for (int i : tower.solution(new int[]{1,5,3,6,7,6,5})) {
-            System.out.println(i);
-        }
+        WonderLand wonderLand = new WonderLand();
+        System.out.println(wonderLand.solution(6));
     }
 }
 
@@ -27,5 +26,13 @@ public class Main2 {
 * */
 
 /*높이가 제 각기인 탑의 수신위치를 구해라
+    Tower tower = new Tower();
+    for (int i : tower.solution(new int[]{1,5,3,6,7,6,5})) {
+        System.out.println(i);
+    }
+* */
 
+/*124 나라의 숫자
+    WonderLand wonderLand = new WonderLand();
+    System.out.println(wonderLand.solution(6));
 * */
