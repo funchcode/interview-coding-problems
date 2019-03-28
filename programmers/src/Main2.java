@@ -1,7 +1,4 @@
-import Level2.Skilltree;
-import Level2.StockPrice;
-import Level2.Tower;
-import Level2.WonderLand;
+import Level2.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,8 +7,11 @@ import java.util.Arrays;
 public class Main2 {
 
     public static void main(String[] args) {
-        WonderLand wonderLand = new WonderLand();
-        System.out.println(wonderLand.solution(6));
+        PushFunc pushFunc = new PushFunc();
+        int[] answer = pushFunc.solution(new int[]{93, 30, 55}, new int[]{1, 30, 5});
+        for(int i : answer) {
+            System.out.println(i);
+        }
     }
 }
 
@@ -36,3 +36,11 @@ public class Main2 {
     WonderLand wonderLand = new WonderLand();
     System.out.println(wonderLand.solution(6));
 * */
+
+/* 기능 개발에 걸리는 속도를 구해라
+    PushFunc pushFunc = new PushFunc();
+    int[] answer = pushFunc.solution(new int[]{93, 30, 55}, new int[]{1, 30, 5});
+    for(int i : answer) {
+        System.out.println(i);
+    }
+*/
