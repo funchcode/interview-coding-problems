@@ -27,7 +27,7 @@ public class PushFunc {
                 idx ++;
                 day = (int)Math.ceil((100-progresses[i])/(double)speeds[i]);
             }
-            answer[idx] = answer[idx] + 1;
+            answer[idx] += 1;
         }
         return Arrays.stream(answer).filter(e -> e != 0).toArray();
     }

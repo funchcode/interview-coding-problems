@@ -7,11 +7,9 @@ import java.util.Arrays;
 public class Main2 {
 
     public static void main(String[] args) {
-        PushFunc pushFunc = new PushFunc();
-        int[] answer = pushFunc.solution(new int[]{93, 30, 55}, new int[]{1, 30, 5});
-        for(int i : answer) {
-            System.out.println(i);
-        }
+        BridgeTruck bridgeTruck = new BridgeTruck();
+        System.out.println(bridgeTruck.solution(2,10,new int[]{7,4,5,6}));
+        System.out.println(bridgeTruck.solution(100,100,new int[]{10}));
     }
 }
 
@@ -43,4 +41,8 @@ public class Main2 {
     for(int i : answer) {
         System.out.println(i);
     }
+*/
+
+/*모든 트럭들이 다리를 건넌 시간을 구해라
+
 */
