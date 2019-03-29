@@ -2,14 +2,15 @@ import Level2.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /* Level2 실행 코드 */
 public class Main2 {
 
     public static void main(String[] args) {
-        BridgeTruck bridgeTruck = new BridgeTruck();
-        System.out.println(bridgeTruck.solution(2,10,new int[]{7,4,5,6}));
-        System.out.println(bridgeTruck.solution(100,100,new int[]{10}));
+        Largest largest = new Largest();
+        System.out.println(largest.solution("4177252841",4));
+        System.out.println(largest.solution("1231234",3));
     }
 }
 
@@ -44,5 +45,13 @@ public class Main2 {
 */
 
 /*모든 트럭들이 다리를 건넌 시간을 구해라
+    BridgeTruck bridgeTruck = new BridgeTruck();
+    System.out.println(bridgeTruck.solution(2,10,new int[]{7,4,5,6}));
+    System.out.println(bridgeTruck.solution(100,100,new int[]{10}));
+*/
 
+/*경우의 수 중 가장 큰 값을 구하라
+    Largest largest = new Largest();
+    System.out.println(largest.solution("4177252841",4));
+    System.out.println(largest.solution("1231234",3));
 */
