@@ -8,9 +8,9 @@ import java.util.List;
 public class Main2 {
 
     public static void main(String[] args) {
-        Largest largest = new Largest();
-        System.out.println(largest.solution("4177252841",4));
-        System.out.println(largest.solution("1231234",3));
+        Lifeboat lifeboat = new Lifeboat();
+        System.out.println(lifeboat.solution(new int[]{70,50,80,50}, 100));
+        System.out.println(lifeboat.solution(new int[]{70,50,80}, 100));
     }
 }
 
@@ -54,4 +54,10 @@ public class Main2 {
     Largest largest = new Largest();
     System.out.println(largest.solution("4177252841",4));
     System.out.println(largest.solution("1231234",3));
+*/
+
+/*구명보트 최대한 적게 사용해서 사람을 구출해라
+    Lifeboat lifeboat = new Lifeboat();
+    System.out.println(lifeboat.solution(new int[]{70,50,80,50}, 100));
+    System.out.println(lifeboat.solution(new int[]{70,50,80}, 100));
 */
