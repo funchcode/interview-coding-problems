@@ -8,9 +8,8 @@ import java.util.List;
 public class Main2 {
 
     public static void main(String[] args) {
-        Lifeboat lifeboat = new Lifeboat();
-        System.out.println(lifeboat.solution(new int[]{70,50,80,50}, 100));
-        System.out.println(lifeboat.solution(new int[]{70,50,80}, 100));
+        JoyStick joyStick = new JoyStick();
+        System.out.println(joyStick.solution("JEROEN"));
     }
 }
 
@@ -60,4 +59,9 @@ public class Main2 {
     Lifeboat lifeboat = new Lifeboat();
     System.out.println(lifeboat.solution(new int[]{70,50,80,50}, 100));
     System.out.println(lifeboat.solution(new int[]{70,50,80}, 100));
+*/
+
+/*조이스틱으로 이름 생성
+    JoyStick joyStick = new JoyStick();
+    System.out.println(joyStick.solution("JEROEN"));
 */
