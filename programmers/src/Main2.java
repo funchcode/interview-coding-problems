@@ -8,8 +8,9 @@ import java.util.List;
 public class Main2 {
 
     public static void main(String[] args) {
-        JoyStick joyStick = new JoyStick();
-        System.out.println(joyStick.solution("JEROEN"));
+        Spy spy = new Spy();
+        System.out.println(spy.solution(new String[][]{{"yellow_hat", "headgear"},{"blue_sunglasses", "eyewear"},{"green_turban", "headgear"}}));
+        System.out.println(spy.solution(new String[][]{{"crow_mask", "face"},{"blue_sunglasses", "face"},{"smoky_makeup", "face"}}));
     }
 }
 
@@ -64,4 +65,10 @@ public class Main2 {
 /*조이스틱으로 이름 생성
     JoyStick joyStick = new JoyStick();
     System.out.println(joyStick.solution("JEROEN"));
+*/
+
+/*스파이 의상을 리턴하라
+    Spy spy = new Spy();
+    System.out.println(spy.solution(new String[][]{{"yellow_hat", "headgear"},{"blue_sunglasses", "eyewear"},{"green_turban", "headgear"}}));
+    System.out.println(spy.solution(new String[][]{{"crow_mask", "face"},{"blue_sunglasses", "face"},{"smoky_makeup", "face"}}));
 */
