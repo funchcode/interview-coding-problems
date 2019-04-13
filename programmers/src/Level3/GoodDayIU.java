@@ -12,7 +12,6 @@ package Level3;
 // 2 output : answer = 2
 public class GoodDayIU {
     public int findNum(int num, int m, int p) {
-        System.out.println(num +" : "+m+" : "+p);
         if(num == 1 && m == 0 && p == 0) return 1;
         if(num <= 1) return 0;
         if(m < 0 || p < 0) return 0;
@@ -30,6 +29,21 @@ public class GoodDayIU {
     }
     public int findSol(int n) {
         int m = (int) (Math.log(n) / Math.log(3));
-        return findNum(n-2, m, 2*m-2);
+        return findNum(n, m, 2*m);  
     }
 }
+// **++ 11
+// *+*+ 13
+// *++* 15
+
+// ***++++ 31
+// **+*+++ 33
+// **++*++ 35
+// **+++*+ 37
+// **++++* 39
+
+// *+**+++ 39
+// *+*+*++ 41
+// *+*++*+ 43
+
+// *++++** 51
