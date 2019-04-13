@@ -1,11 +1,12 @@
+import Level3.GoodDayIU;
 import Level3.KakaoAd;
 import Level3.KakaoBook;
 
 /* Level3 실행 코드 */
 public class Main3 {
     public static void main(String[] args) {
-        KakaoAd kakaoAd = new KakaoAd();
-        System.out.println(kakaoAd.solution("HaEaLaLaObWORLDb"));
+        GoodDayIU iu = new GoodDayIU();
+        System.out.println(iu.solution(41));
     }
 }
 
@@ -22,3 +23,8 @@ public class Main3 {
     KakaoAd kakaoAd = new KakaoAd();
     System.out.println(kakaoAd.solution("HaEaLaLaObWORLDb"));
 * */
+
+/*카카오 4단 고음
+    GoodDayIU iu = new GoodDayIU();
+    System.out.println(iu.solution(41));
+*/
