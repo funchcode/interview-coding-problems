@@ -29,7 +29,7 @@ public class GoodDayIU {
     }
     public int findSol(int n) {
         int m = (int) (Math.log(n) / Math.log(3));
-        return findNum(n, m, 2*m);  
+        return findNum(n, m, 2*m);
     }
 }
 // **++ 11

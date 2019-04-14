@@ -1,13 +1,11 @@
-import Level3.GoodDayIU;
-import Level3.KakaoAd;
-import Level3.KakaoBook;
-import Level3.Traffic;
+import Level3.*;
 
 import java.text.SimpleDateFormat;
 
 /* Level3 실행 코드 */
 public class Main3 {
     public static void main(String[] args) {
+
     }
 }
 
@@ -54,4 +52,15 @@ public class Main3 {
     traffic.solution(input1);
     traffic.solution(input2);
     traffic.solution(input3);
+*/
+
+/*카카오 뉴스 클러스터링
+    JaccardIndex jaccardIndex = new JaccardIndex();
+    String str1 = "FRENCH";
+    String str2 = "FRANCE";
+    String str5 = "aa1+aa2";
+    String str6 = "AAAA12";
+    String str3 = "E=M*C^2";
+    String str4 = "e=m*c^2";
+    System.out.println(jaccardIndex.solution(str1, str2));
 */
