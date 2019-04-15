@@ -1,8 +1,9 @@
-import Level3.*;
+import Level5.Cashing;
+import Level5.FriendsBlock;
+import Level5.SecretMap;
+import Level5.ShuttleBus;
 
-import java.text.SimpleDateFormat;
-
-/* Level3 실행 코드 */
+/* Level5 실행 코드 */
 public class Main3 {
     public static void main(String[] args) {
 
@@ -63,4 +64,68 @@ public class Main3 {
     String str3 = "E=M*C^2";
     String str4 = "e=m*c^2";
     System.out.println(jaccardIndex.solution(str1, str2));
+*/
+
+/*카카오 셔틀버스
+    ShuttleBus shuttleBus = new ShuttleBus();
+    String[] input1 = {
+            "08:00", "08:01", "08:02", "08:03"
+    };
+    String[] input2 = {
+            "09:10", "09:09", "08:00"
+    };
+    String[] input3 = {
+            "09:00", "09:00", "09:00", "09:00"
+    };
+    String[] input4 = {
+            "23:59"
+    };
+    shuttleBus.solution(1,1,5, input1);
+    shuttleBus.solution(2,10,2, input2);
+    shuttleBus.solution(2,1,2, input3);
+    shuttleBus.solution(1,1,1, input4);
+    shuttleBus.solution(10,60,45,input2);
+*/
+
+/*카카오 프렌즈블록
+    FriendsBlock friendsBlock = new FriendsBlock();
+    String[] input = {
+            "CCBDE", "AAADE", "AAABF", "CCBBF"
+    };
+    String[] input1 = {
+            "TTTANT",
+            "RRFACC",
+            "RRRFCC",
+            "TRRRAA",
+            "TTMMMF",
+            "TMMTTJ"
+    };
+    String[] input2 = {
+            "ABDEE",
+            "BBCEE",
+            "BBCDE",
+            "ABCDE",
+            "ABCDE"
+    };
+    System.out.println(friendsBlock.solution(4,5,input));
+    System.out.println(friendsBlock.solution(6,6,input1));
+    System.out.println(friendsBlock.solution(5,5,input2));
+*/
+
+/*캐시 크기에 따른 실행속도 구하기
+    Cashing cashing = new Cashing ();
+    String[] input = {
+            "Jeju", "Pangyo", "Seoul", "NewYork", "LA", "Jeju", "Pangyo", "Seoul", "NewYork", "LA"
+    };
+    String[] input1 = {
+            "Jeju", "Pangyo", "Seoul", "NewYork", "LA"
+    };
+    System.out.println(cashing.solution(3, input));
+    System.out.println(cashing.solution(0, input1));
+*/
+
+/*카카오 비밀지도
+    SecretMap secretMap = new SecretMap();
+    secretMap.solution(5, new int[]{9, 20, 28, 18, 11}, new int[]{30, 1, 21, 17, 28});
+    secretMap.solution(6, new int[]{46, 33, 33, 22, 31, 50}, new int[]{27, 56, 19, 14, 14, 10});
 */
