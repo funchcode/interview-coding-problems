@@ -3,11 +3,15 @@ import Level5.*;
 /* Level5 실행 코드 */
 public class Main3 {
     public static void main(String[] args) {
-        OpenChat openChat = new OpenChat();
-        String[] input = {
-                "Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"
+        FailureRate failureRate = new FailureRate();
+        int[] input = {
+                2, 1, 2, 6, 2, 4, 3, 3
         };
-        openChat.solution(input);
+        int[] input1 = {
+                1, 2, 3, 2, 2, 1, 1, 1
+        };
+        failureRate.solution(5, input);
+        failureRate.solution(5, input1);
     }
 }
 
@@ -137,4 +141,16 @@ public class Main3 {
                 "Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"
         };
         openChat.solution(input);
+*/
+
+/*카카오 오천성의 스테이지 실패율을 구해라
+        FailureRate failureRate = new FailureRate();
+        int[] input = {
+                2, 1, 2, 6, 2, 4, 3, 3
+        };
+        int[] input1 = {
+                1, 2, 3, 2, 2, 1, 1, 1
+        };
+        failureRate.solution(5, input);
+        failureRate.solution(5, input1);
 */
