@@ -1,12 +1,13 @@
-import Level5.Cashing;
-import Level5.FriendsBlock;
-import Level5.SecretMap;
-import Level5.ShuttleBus;
+import Level5.*;
 
 /* Level5 실행 코드 */
 public class Main3 {
     public static void main(String[] args) {
-
+        OpenChat openChat = new OpenChat();
+        String[] input = {
+                "Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"
+        };
+        openChat.solution(input);
     }
 }
 
@@ -128,4 +129,12 @@ public class Main3 {
     SecretMap secretMap = new SecretMap();
     secretMap.solution(5, new int[]{9, 20, 28, 18, 11}, new int[]{30, 1, 21, 17, 28});
     secretMap.solution(6, new int[]{46, 33, 33, 22, 31, 50}, new int[]{27, 56, 19, 14, 14, 10});
+*/
+
+/*카카오 비밀채팅방
+        OpenChat openChat = new OpenChat();
+        String[] input = {
+                "Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"
+        };
+        openChat.solution(input);
 */
