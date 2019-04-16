@@ -3,9 +3,20 @@ import Level5.*;
 /* Level5 실행 코드 */
 public class Main3 {
     public static void main(String[] args) {
-
+        KakaoGame kakaoGame = new KakaoGame();
+        int[][] nodeinfo = {
+                {5,3},{11,5},{13,3},{3,5},{6,1},{1,3},{8,6},{7,2},{2,2}
+        };
+        kakaoGame.solution(nodeinfo);
     }
 }
+/*카카오 길찾기 게임
+        KakaoGame kakaoGame = new KakaoGame();
+        int[][] nodeinfo = {
+                {5,3},{11,5},{13,3},{3,5},{6,1},{1,3},{8,6},{7,2},{2,2}
+        };
+        kakaoGame.solution(nodeinfo);
+*/
 /*카카오 먹방
 int[] food_times = {
            3,2,1
