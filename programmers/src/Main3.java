@@ -3,9 +3,18 @@ import Level5.*;
 /* Level5 실행 코드 */
 public class Main3 {
     public static void main(String[] args) {
-        
+
     }
 }
+/*카카오 먹방
+int[] food_times = {
+           3,2,1
+        };
+        int k = 5;
+        KakaoTV kakaoTV = new KakaoTV();
+        System.out.println(kakaoTV.solution(food_times, k));
+*/
+
 /*카카오 후보키
         CandidateKey candidateKey = new CandidateKey();
         String[][] input = {
