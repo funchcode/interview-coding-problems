@@ -3,17 +3,17 @@ import Level5.*;
 /* Level5 실행 코드 */
 public class Main3 {
     public static void main(String[] args) {
-        FailureRate failureRate = new FailureRate();
-        int[] input = {
-                2, 1, 2, 6, 2, 4, 3, 3
-        };
-        int[] input1 = {
-                1, 2, 3, 2, 2, 1, 1, 1
-        };
-        failureRate.solution(5, input);
-        failureRate.solution(5, input1);
+        
     }
 }
+/*카카오 후보키
+        CandidateKey candidateKey = new CandidateKey();
+        String[][] input = {
+                {"100","ryan","music","2"},{"200","apeach","math","2"},{"300","tube","computer","3"}
+                ,{"400","con","computer","4"},{"500","muzi","music","3"},{"600","apeach","music","2"}
+        };
+        candidateKey.solution(input);
+*/
 
 /*카카오 프렌즈 컬러링 북
     KakaoBook kakaoBook = new KakaoBook();
